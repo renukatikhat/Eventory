@@ -366,12 +366,16 @@ function AdminDashboard({
         );
       }
 
-      const productWithId = {
-        ...data,
-        id:
-          data._id ||
-          data.id,
-      };
+      const savedProduct = data.product || data;
+
+const productWithId = {
+  ...savedProduct,
+  id:
+    savedProduct._id ||
+    savedProduct.id ||
+    data.id,
+  price: Number(savedProduct.price),
+};
 
       if (!productWithId.id) {
         throw new Error(
