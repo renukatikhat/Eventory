@@ -12,7 +12,8 @@ import AdminDashboard from "./pages/AdminDashboard";
 
 import GiftRecommender from "./GiftRecommender";
 
-const API_BASE_URL = "http://127.0.0.1:5000/api";
+
+const API_BASE_URL = "https://eventory-backend.onrender.com/api";
 
 const initialProducts = [
   {
