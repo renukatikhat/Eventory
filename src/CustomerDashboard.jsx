@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import "./CustomerDashboard.css";
 
-const API_BASE_URL = "http://127.0.0.1:5000/api";
-
+const API_BASE_URL = "https://eventory-backend.onrender.com/api";
 function CustomerDashboard({
   customer,
   onBack,
