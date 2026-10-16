@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AdminDashboard.css";
-const API_URL = "http://localhost:5000/api/products";
-const ORDERS_API_URL = "http://localhost:5000/api/admin/orders";
+const API_URL = "https://eventory-backend.onrender.com/api/products";
+const ORDERS_API_URL = "https://eventory-backend.onrender.com/api/admin/orders";
 
 const occasionCategories = [
   "Birthday",

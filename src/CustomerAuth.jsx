@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./CustomerAuth.css";
 
-const API_URL = "http://localhost:5000/api/customer";
+const API_URL = "https://eventory-backend.onrender.com/api/customer";
 
 function CustomerAuth({ onLogin, onBack }) {
   const [isRegister, setIsRegister] = useState(false);

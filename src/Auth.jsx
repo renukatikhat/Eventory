@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Auth.css";
 
-const ADMIN_LOGIN_URL = "http://localhost:5000/api/admin/login";
+const ADMIN_LOGIN_URL = "https://eventory-backend.onrender.com/api/admin/login";
 
 function Auth({ onLogin, onCancel }) {
   const [username, setUsername] = useState("");
