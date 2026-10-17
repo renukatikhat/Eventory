@@ -1,16 +1,88 @@
-# React + Vite
+# Eventory — AI-Powered Gift Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Eventory is a full-stack, single-vendor e-commerce web application designed to make gift shopping easier. Customers can explore gifts for different occasions and festivals, receive personalized AI-powered gift recommendations, add products to their cart, and place orders online.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Website:** https://eventory-two.vercel.app
+- **GitHub Repository:** https://github.com/renukatikhat/Eventory
+- **Backend API:** https://eventory-backend.onrender.com
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Product Catalog:** Browse gifts for birthdays, anniversaries, weddings, festivals, and other special occasions.
+- **AI Gift Recommendations:** Get gift suggestions based on the recipient, occasion, budget, and interests.
+- **Shopping Cart:** Add products to the cart and review the order total.
+- **Customer Accounts:** Register and log in to access customer features.
+- **Order Management:** Place orders and view order history.
+- **Admin Dashboard:** Manage products and update order statuses.
+- **Responsive Interface:** Designed for a user-friendly shopping experience.
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**Frontend**
+- React
+- Vite
+- JavaScript
+- HTML and CSS
+
+**Backend**
+- Node.js
+- Express.js
+- REST API
+
+**Database**
+- MongoDB Atlas
+
+**Deployment**
+- Vercel (Frontend)
+- Render (Backend)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- A MongoDB Atlas database or compatible MongoDB instance
+- Required environment variables for the backend
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/renukatikhat/Eventory.git
+cd Eventory
+```
+
+### 2. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the frontend
+
+```bash
+npm run dev
+```
+
+### 4. Start the backend
+
+Open another terminal:
+
+```bash
+cd backend
+npm install
+node server.js
+```
+
+Configure the required backend environment variables before starting the server. Never commit real API keys, database credentials, passwords, or JWT secrets to GitHub.
+
+## Project Purpose
+
+Eventory was developed as a full-stack e-commerce project to demonstrate frontend development, backend API integration, database connectivity, customer order workflows, admin functionality, and personalized gift recommendations.
+
+## Author
+
+**Renuka Tikhat**
+
+GitHub: https://github.com/renukatikhat
