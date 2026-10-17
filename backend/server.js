@@ -119,22 +119,7 @@ app.get("/", (req, res) => {
 app.post("/api/admin/login", async (req, res) => {
   try {
     const { username, password } = req.body;
-    console.log("Username received:", JSON.stringify(username));
-console.log(
-  "Configured username:",
-  JSON.stringify(process.env.ADMIN_USERNAME)
-);
-console.log(
-  "Username matches:",
-  username?.trim() === process.env.ADMIN_USERNAME?.trim()
-);
-console.log(
-  "Password matches:",
-  await bcrypt.compare(
-    password || "",
-    process.env.ADMIN_PASSWORD_HASH || ""
-  )
-);
+
     if (!username || !password) {
       return res.status(400).json({
         message: "Username and password are required",

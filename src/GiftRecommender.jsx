@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-const API_BASE_URL = "http://127.0.0.1:5000/api";
-
+const API_BASE_URL = "https://eventory-backend.onrender.com/api";
 const relations = [
   {
     value: "partner",
@@ -84,6 +83,7 @@ function GiftRecommender({
   products = [],
   onAddToCart,
 }) {
+  console.log("Gift recommender products:", products);
   const [relation, setRelation] = useState("");
   const [occasion, setOccasion] = useState("");
   const [budget, setBudget] = useState("");
